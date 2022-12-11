@@ -1,41 +1,36 @@
 <template>
   <div>
-    Main
-    <!-- <div>{{ options }}</div>
-    <Bar :data="data" :options="options" /> -->
-
+    <router-link to="/"><img src="../assets/images/logo.svg" alt=""></router-link>
+    <GChart type="PieChart" :data="chartDаta" :options="chartOptions" />
   </div>
 </template>
 
 <script >
-// import {
-//   Chart as ChartJS,
-//   Title,
-//   Tooltip,
-//   Legend,
-//   BarElement,
-//   CategoryScale,
-//   LinearScale
-// } from 'chart.js'
-// import { Bar } from 'vue-chartjs'
-
-// ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
+import { GChart } from "vue-google-charts";
 
 export default {
-  // components: {
-  //   Bar
-  // },
-  // data() {
-  //   return {
-  //     data: {
-  //       labels: ['January', 'February', 'March'],
-  //       datasets: [{ data: [40, 20, 12] }]
-  //     },
-  //     options: {
-  //       responsive: true
-  //     }
-  //   }
-  // }
+  name: "App",
+  components: {
+    GChart
+  },
+  data() {
+    return {
+      chartDаta: [
+        ["name", "value"],
+        ["Карьера", 100],
+        ["Здоровье", 100],
+        ["Финансы", 100],
+        ["Семья", 100],
+        ["Развитие", 100],
+      ],
+      chartOptions: {
+        chart: {
+          title: "Company Performance",
+          subtitle: "blog in total: languages"
+        }
+      }
+    };
+  }
 
 }
 </script>
