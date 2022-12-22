@@ -1,19 +1,20 @@
 <template>
   <div>
-    <router-link to="/"><img src="../assets/images/logo.svg" alt=""></router-link>
-    <ul class="goals" style="width: 300px;">
-      <li v-for="goal in getGoals" :key="goal.id">{{ goal.name }}</li>
+    <ComponentHeader/>
+    <ul class="goals">
+      <li class="goals__li" v-for="goal in getGoals" :key="goal.id" @click="this.$router.push('/goal')">{{ goal.name }}</li>
     </ul>
   </div>
 </template>
 
 <script >
 import { mapGetters } from 'vuex';
+import ComponentHeader from '../components/ComponentHeader.vue'
 
 export default {
   name: "App",
   components: {
-
+    ComponentHeader
   },
   data() {
     return {
