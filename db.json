@@ -1,24 +1,68 @@
 {
   "goals": [
     {
-      "id":"0",
-      "name":"Здоровье"
+      "id": "0",
+      "name": "Здоровье",
+      "goals": [
+        {
+          "name":"sdfsdf"
+        },
+        {
+          "name":"aafasdf"
+        }
+      ]
     },
     {
       "id": "1",
-      "name": "Финансы"
+      "name": "Финансы",
+      "goals":[
+        {
+          "name": "test1"
+        },
+        {
+          "name": "test2"
+        },
+        {
+          "name": "test3"
+        }
+      ]
     },
     {
       "id": "2",
-      "name": "Семья"
+      "name": "Семья",
+      "goals":[
+        {
+          "name": "plan"
+        },
+        {
+          "name": "businnes"
+        },
+        {
+          "name": "strategy"
+        }
+      ]
     },
     {
       "id": "3",
-      "name": "Развитие"
+      "name": "Развитие",
+      "goals":[
+        {
+          "name": "test1"
+        },
+        {
+          "name": "test2"
+        },
+        {
+          "name": "test3"
+        }
+      ]
     },
     {
       "id": "4",
-      "name": "Карьера"
+      "name": "Карьера",
+      "goals":[
+
+      ]
     }
   ]
 }

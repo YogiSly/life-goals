@@ -2,7 +2,7 @@
   <div>
     <ComponentHeader/>
     <ul class="goals">
-      <li class="goals__li" v-for="goal in getGoals" :key="goal.id" @click="this.$router.push('/goal')">{{ goal.name }}</li>
+      <li class="goals__li" v-for="goal in getGoals" :key="goal.id" @click="this.$router.push({name:'goal',params:{id:goal.id}})">{{ goal.name }}</li>
     </ul>
   </div>
 </template>

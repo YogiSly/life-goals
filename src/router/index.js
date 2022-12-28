@@ -6,7 +6,7 @@ import ViewGoal from '../views/ViewGoal.vue'
 const routes = [
   { path: '/', component: ViewMain },
   { path: '/auth', component: ViewAuth },
-  { path: '/goal', component: ViewGoal },
+  { path: '/goal/:id', name: 'goal', component: ViewGoal },
 ]
 
 const router = createRouter({

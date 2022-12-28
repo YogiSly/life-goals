@@ -42,3 +42,21 @@ body {
     background-color: #7d7e81;
   }
 }
+.goal {
+  display: flex;
+  flex-direction: column;
+  &__btn-add {
+    max-width: 200px;
+    background: blue;
+    color:#fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 20px;
+    cursor: pointer;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+}
