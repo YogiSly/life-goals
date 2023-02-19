@@ -9,7 +9,7 @@
         <button @click="addGoal">Добавить</button>
       </div>
       <div class="goal__target" v-for="go in getGoal" :key="go">
-        {{ go.name }}
+        <!-- {{ go.name }} -->
       </div>
     </div>
   </div>
