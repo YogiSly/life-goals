@@ -1,6 +1,6 @@
 <template>
   <div class="goal">
-    <ComponentHeader />
+    <HeaderComponent />
     <div class="goal__content">
       <button class="goal__btn-add" @click="addShowGoal">Добавить задачу</button>
       <div v-if="formAdd">
@@ -11,26 +11,11 @@
     </div>
   </div>
 </template>
-<script>
-import ComponentHeader from '../components/ComponentHeader.vue'
-export default {
-  components: {
-    ComponentHeader
-  },
-  data() {
-    return {
-      formAdd: false,
-      dataAdd: ''
-    }
-  },
-
-  methods: {
-    addShowGoal() {
-      this.formAdd = !this.formAdd
-    },
-
-  },
-  mounted() {
-  }
+<script setup>
+import HeaderComponent from '../components/HeaderComponent.vue'
+const formAdd = false;
+const dataAdd = '';
+const addShowGoal = () => {
+  this.formAdd.value = !this.formAdd
 }
 </script>

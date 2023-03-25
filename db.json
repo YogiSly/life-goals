@@ -1,0 +1,66 @@
+{
+  "goals": [
+    {
+      "id": "0",
+      "name": "Здоровье",
+      "goals": [
+        {
+          "name": "sdfsdf"
+        },
+        {
+          "name": "aafasdf"
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "name": "Финансы",
+      "goals": [
+        {
+          "name": "test1"
+        },
+        {
+          "name": "test2"
+        },
+        {
+          "name": "test3"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Семья",
+      "goals": [
+        {
+          "name": "plan"
+        },
+        {
+          "name": "businnes"
+        },
+        {
+          "name": "strategy"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Развитие",
+      "goals": [
+        {
+          "name": "test1"
+        },
+        {
+          "name": "test2"
+        },
+        {
+          "name": "test3"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Карьера",
+      "goals": []
+    }
+  ]
+}
